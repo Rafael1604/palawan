@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background Text</title>
+    <style>
+        body {
+            font-family: sans-serif; /* Use a common font */
+            margin: 0; /* Remove default body margins */
+            padding: 0;
+        }
+
+        .gradient-background {
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            padding: 40px; /* Increased padding */
+            text-align: center;
+        }
+
+        .gradient-background h1 {
+            color: #e71414; /* Dark text for contrast */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        .gradient-background p {
+            color: #2bad26; /* Slightly lighter text */
+            line-height: 1.6; /* Improve readability */
+        }
+
+        .fancy-text {
+            
+            text-fill-color: transparent; /* Standard property */
+
+            
+            background: linear-gradient(to bottom right, #1f0ad6, #ec008c);
+            -webkit-background-clip: text;
+            background-clip: text; /* Standard property */
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+            text-align: center; /* Center the fancy text */
+            font-size: 3em;
+            margin-top: 40px; /* Add some space above */
+        }
+
+        /* Example of a different gradient */
+        .another-gradient {
+          background: linear-gradient(to left, #a13e0c, #ff5e62);
+          padding: 20px;
+          color: white; /* Light text on a darker gradient */
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .another-gradient h2 {
+          margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gradient-background">
+        <h1>Welcome to My Website</h1>
+        <p>This is some example text on a linear gradient background.  It's important to choose text colors that provide good contrast for readability.</p>
+    </div>
+
+    <h1 class="fancy-text">Gradient Text Effect</h1>
+
+    <div class="another-gradient">
+        <h2>Another Gradient Example</h2>
+        <p>This demonstrates a different gradient and light text color.  Experiment with different colors and directions!</p>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+    height: 500px; /* Adjust as needed */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 40px;
+    width: 600px;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust minmax as needed */
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section-text {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>PALAWAN</h1>
+            <h3>The Land of Beautiful</h3>
+            
+        </div>
+        <img src="https://i.pinimg.com/736x/68/91/80/689180e2e052e2e5535de592257f1db6.jpg" alt="Hero Image">
+    </header>
+
+    <section class="section-grid">
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/736x/1b/68/0e/1b680ef8d5f131712b2288492b773f11.jpg" alt="Grid Image 1">
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/736x/c7/7b/61/c77b618765ae5f6df55374c412e0cd03.jpg" alt="Grid Image 2">
+        </div>
+        </section>
+
+    <section class="section-text">
+        <h2>LEARN & GIVE BACK</h2>
+        <p>Some descriptive text here.</p>
+    </section>
+
+    <section class="section-grid">
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/736x/68/91/80/689180e2e052e2e5535de592257f1db6.jpg" alt="Grid Image 3">
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/736x/68/91/80/689180e2e052e2e5535de592257f1db6.jpg" alt="Grid Image 4">
+        </div>
+        </section>
+
+    <section class="section-grid">
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/736x/68/91/80/689180e2e052e2e5535de592257f1db6.jpg" alt="Grid Image 5">
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/736x/68/91/80/689180e2e052e2e5535de592257f1db6.jpg" alt="Grid Image 6">
+        </div>
+        </section>
+
+    <section class="section-text">
+        <h2>Activism</h2>
+        <p>More descriptive text here.</p>
+    </section>
+
+    <section class="section-grid">
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/736x/68/91/80/689180e2e052e2e5535de592257f1db6.jpg" alt="Grid Image 7">
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/736x/68/91/80/689180e2e052e2e5535de592257f1db6.jpg" alt="Grid Image 8">
+        </div>
+        </section>
+
+    <section class="section-text">
+        <h2>Inspirational Stories</h2>
+        <p>FROM OUR ARTIC FANS</p>
+    </section>
+
+    <section class="section-grid">
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/736x/68/91/80/689180e2e052e2e5535de592257f1db6.jpg" alt="Grid Image 9">
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/736x/68/91/80/689180e2e052e2e5535de592257f1db6.jpg" alt="Grid Image 10">
+        </div>
+        </section>
+
+    <footer>
+        <p>&copy; 2025 PAF4TOB</p>
+    </footer>
+
+</body>
+</html>
