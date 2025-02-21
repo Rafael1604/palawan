@@ -82,7 +82,7 @@ header nav ul li a:hover::after {
 
 /* Hero Section */
 header {
-    background-image: url('https://i.pinimg.com/736x/58/46/86/5846863a4160adb46b1bdbfc6e0d72eb.jpg');
+    background-image: url('img/header-bg.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
