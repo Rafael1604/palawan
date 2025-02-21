@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        
+        
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="support.html" id="active">Support Us</a></li>
+                
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1> SUPPORT US</h1>
+            <p>Support Us in this project travel website to make a profit and make this project more appealing and give accurate info </p>
+            <a href="#explore">DONATE</a>
+        </div>
+    </header>
+
+    <main id="explore">
+        <section class="destinations" >
+            <div class="destination">
+                <img src="https://i.pinimg.com/736x/42/4d/84/424d84a5c153fbc799ec2c3ca791a274.jpg" alt="Puerto Princesa">
+                <h3>Puerto Princesa</h3>
+            </div>
+            <div class="destination">
+                <img src="https://i.pinimg.com/736x/36/ae/85/36ae85cc5a82f2cad618e4e18e618aa8.jpg" alt="El Nido">
+                <h3>El Nido</h3>
+            </div>
+            <div class="destination">
+                <img src="https://1.bp.blogspot.com/-G6Z8Q40HMrA/Un_Vu26puaI/AAAAAAAACS8/EkGiXcJrFi8/w574-h383-no/ugong_rock_adventures.jpg" alt="Ugong Rock Adventures">
+                <h3>Ugong Rock Adventures</h3>
+            </div>
+            <div class="destination">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNfTCGdkX_R24pkbIvRo3eFjZV4wVTlis0mApqs=s1360-w1360-h1020-rw" alt="Santa Isabel">
+                <h3>Santa Isabel</h3>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+    </script>
+</body>
+</html>
